@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style type="text/css">
+  * {
+    font-family: helvetica, arial;
+  }
+
+  a {
+    color: #e45b18;
+    text-decoration: none;
+  }
+
+  body {
+    font-size: 16pt;
+  }
+
+  /* News */
+
+  .new_snippet_container {
+    margin-bottom: 10px;
+  }
+
+  .new_snippet {
+    padding: 10px;
+    /*border: 1px solid #eaeaea;*/
+    margin: 10px;
+    background-color: #202020;
+  }
+
+  .new_snippet .title {
+    font-size: 16pt;
+  }
+
+  .new_snippet .date {
+    font-size: 12pt;
+    margin-bottom: 5px;
+  }
+
+  .new_snippet .text {
+    padding-left: 20px;
+  }
+
+  /* Buttons */
+  .button_container {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .social {}
+</style>
+</head>
+
+<body>
+
+  <div class="button_container">
+
+    <a href="main.html">Home</a> |
+    <!-- <a href="/forum/index.php?board=2.0">News</a> | -->
+    <a href="download.html">Download</a> |
+    <a href="change_log.html">ChangeLog</a> |
+    <!--<a href="forum">Forum</a> | -->
+    <a href="gallery.html">Media</a> |
+    <a href="faq.html">FAQ</a> |
+    <a href="about.html">About</a>
+  </div>
+
+  <div class="button_container">
+    <div class="social">
+
+      <a target="_blank" href="https://www.youtube.com/user/TheAchoum/videos"><img border="0" src="image/youtube.png"></a>&nbsp;&nbsp;
+      <a target="_blank" href="https://twitter.com/mat_gb"><img border="0" src="image/twit.png"></a>&nbsp;&nbsp;
+      <a target="_blank" href="https://discord.gg/MG8ZmNk"><img border="0" src="image/discord.png"></a>
+
+      <!--
+      <a target="_blank" href="https://www.youtube.com/user/TheAchoum/videos"><img border="0" src="image/youtube-icon.png"></a>
+
+      <a target="_blank" href="https://twitter.com/mat_gb"><img border="0" src="image/twitter-icon.png"></a>
+
+      <a target="_blank" href="https://www.indiedb.com/games/dust-the-abandoned-land"><img border="0" src="image/indiedb-icon.png"></a>
+
+      <a href="rss" type="application/rss+xml"><img border="0" src="image/rss-icon.png"></a>
+      -->
+    </div>
+
+  </div>
+
+  <div class="new_snippet_container">
+
+    <?php
+foreach( GetChangeLogsAndNews() as $item ) {
+echo '<div class="new_snippet">';
+  if(array_key_exists("version", $item)) {
+      echo "<div class='title'>Dust Version ".$item["version"]."</div>";
+      echo "<div class='date'>".FormatNewsDate($item["date"])."</div><br/>";
+      echo "<div class='text'>".nl2br($item["description"])."</div>";
+  } else {
+    echo "<div class='title'>".$item['title']."</div>";
+    echo "<div class='date'>".FormatNewsDate($item["date"])."</div><br/>";
+   echo "<div class='text'>".nl2br($item['content'])."</div>";
+  }
+  echo '</div>';
+}
+?>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<rss version='2.0'>
+<channel>
+<title>Dust : The Abandoned Land</title>
+<link>http://dust.mathieu.guillame-bert.com</link>
+<description><![CDATA[News and Release of Dust: The Abandoned Land]]></description>
+<image>
+<url>http://dust.mathieu.guillame-bert.com/image/favicon.png</url>
+<link>http://dust.mathieu.guillame-bert.com/image/favicon.png</link>
+</image>
+<item>
+<title>Release of Dust v0.5.1</title>
+<link>http://dust.mathieu.guillame-bert.com/change_log.html#v{log["version"]}</link>
+<pubDate>{log["date"]}</pubDate>
+<description>{log["description"]}</description>
+<guid>release_v{log["version"]}</guid>
+<category><![CDATA[News &amp; Releases]]></category></item>
+<item>
+<title>Release of Dust v0.5.0</title>
+<link>http://dust.mathieu.guillame-bert.com/change_log.html#v{log["version"]}</link>
+<pubDate>{log["date"]}</pubDate>
+<description>{log["description"]}</description>
+<guid>release_v{log["version"]}</guid>
+<category><![CDATA[News &amp; Releases]]></category></item>
+<item>
+<title>Release of Dust v0.4.1</title>
+<link>http://dust.mathieu.guillame-bert.com/change_log.html#v{log["version"]}</link>
+<pubDate>{log["date"]}</pubDate>
+<description>{log["description"]}</description>
+<guid>release_v{log["version"]}</guid>
+<category><![CDATA[News &amp; Releases]]></category></item>
+<item>
+<title>Release of Dust v0.4.0</title>
+<link>http://dust.mathieu.guillame-bert.com/change_log.html#v{log["version"]}</link>
+<pubDate>{log["date"]}</pubDate>
+<description>{log["description"]}</description>
+<guid>release_v{log["version"]}</guid>
+<category><![CDATA[News &amp; Releases]]></category></item>
+<item>
+<title>Release of Dust v0.3.1</title>
+<link>http://dust.mathieu.guillame-bert.com/change_log.html#v{log["version"]}</link>
+<pubDate>{log["date"]}</pubDate>
+<description>{log["description"]}</description>
+<guid>release_v{log["version"]}</guid>
+<category><![CDATA[News &amp; Releases]]></category></item>
+<item>
+<title>Release of Dust v0.3.0</title>
+<link>http://dust.mathieu.guillame-bert.com/change_log.html#v{log["version"]}</link>
+<pubDate>{log["date"]}</pubDate>
+<description>{log["description"]}</description>
+<guid>release_v{log["version"]}</guid>
+<category><![CDATA[News &amp; Releases]]></category></item>
+<item>
+<title>Release of Dust v0.2.0</title>
+<link>http://dust.mathieu.guillame-bert.com/change_log.html#v{log["version"]}</link>
+<pubDate>{log["date"]}</pubDate>
+<description>{log["description"]}</description>
+<guid>release_v{log["version"]}</guid>
+<category><![CDATA[News &amp; Releases]]></category></item>
+<item>
+<title>Release of Dust v0.1.2</title>
+<link>http://dust.mathieu.guillame-bert.com/change_log.html#v{log["version"]}</link>
+<pubDate>{log["date"]}</pubDate>
+<description>{log["description"]}</description>
+<guid>release_v{log["version"]}</guid>
+<category><![CDATA[News &amp; Releases]]></category></item>
+<item>
+<title>Release of Dust v0.1.1</title>
+<link>http://dust.mathieu.guillame-bert.com/change_log.html#v{log["version"]}</link>
+<pubDate>{log["date"]}</pubDate>
+<description>{log["description"]}</description>
+<guid>release_v{log["version"]}</guid>
+<category><![CDATA[News &amp; Releases]]></category></item>
+<item>
+<title>Release of Dust v0.1.0</title>
+<link>http://dust.mathieu.guillame-bert.com/change_log.html#v{log["version"]}</link>
+<pubDate>{log["date"]}</pubDate>
+<description>{log["description"]}</description>
+<guid>release_v{log["version"]}</guid>
+<category><![CDATA[News &amp; Releases]]></category></item>
+</channel>
+</rss>
